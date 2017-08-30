@@ -2,7 +2,6 @@ package com.bwie.test;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ListView;
 
 import com.bwie.test.API.API;
 import com.bwie.test.Adapter.listAdapter;
@@ -17,10 +16,12 @@ import org.xutils.x;
 
 import java.util.List;
 
+import imageloader.bwie.com.xlistview.XListView;
+
 @ContentView(R.layout.activity_main)
 public class MainActivity extends AppCompatActivity {
-@ViewInject(R.id.listview)
-    ListView listview;
+@ViewInject(R.id.xlistview)
+XListView xlistview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,6 +75,6 @@ public class MainActivity extends AppCompatActivity {
         List<News.ResultBean.DataBean> data = news.getResult().getData();
         //将数据映射到listView上
         listAdapter ada=new listAdapter(data,this);
-        listview.setAdapter(ada);
+        xlistview.setAdapter(ada);
     }
 }

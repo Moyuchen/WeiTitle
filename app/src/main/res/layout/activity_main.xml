@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context="com.bwie.test.MainActivity">
 
-    <ListView
-        android:id="@+id/listview"
+    <imageloader.bwie.com.xlistview.XListView
+        android:id="@+id/xlistview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ListView>
+        android:layout_height="match_parent"></imageloader.bwie.com.xlistview.XListView>
 </LinearLayout>
