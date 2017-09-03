@@ -92,6 +92,7 @@ public class listAdapter extends BaseAdapter {
         News.ResultBean.DataBean dataBean = list.get(i);
         holder.tv_title.setText(dataBean.getTitle());
         holder.tv_data.setText(dataBean.getDate());
+        holder.category.setText(dataBean.getCategory());
         ImageLoader.getInstance().displayImage(dataBean.getThumbnail_pic_s(),holder.imageView);
 
         return view;

@@ -1,5 +1,6 @@
 package com.bwie.test;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
@@ -14,6 +15,7 @@ import com.bwie.test.Fragment.XListViewFragment;
 import com.bwie.test.HorizontalScrollView.HorizontalScrollTabhost;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
+import com.umeng.socialize.UMShareAPI;
 
 import org.xutils.view.annotation.ContentView;
 import org.xutils.view.annotation.ViewInject;
@@ -112,7 +114,9 @@ public class MainActivity extends SlidingFragmentActivity implements View.OnClic
         }
     }
 
-
-
-
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        UMShareAPI.get(this).onActivityResult(requestCode,resultCode,data);
+    }
 }

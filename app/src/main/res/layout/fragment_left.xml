@@ -20,6 +20,7 @@
                     android:paddingTop="10dp">
 
                         <ImageView
+                            android:id="@+id/Phone_login"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="30dp"
@@ -29,6 +30,7 @@
                             android:padding="5dp"
                             android:src="@drawable/phone" />
                         <ImageView
+                            android:id="@+id/WeiXin_login"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="15dp"
@@ -38,6 +40,7 @@
                             android:padding="5dp"
                             android:src="@drawable/wechat" />
                         <ImageView
+                            android:id="@+id/QQ_login"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="15dp"
@@ -47,6 +50,7 @@
                             android:padding="5dp"
                             android:src="@drawable/qq" />
                         <ImageView
+                            android:id="@+id/Sina_login"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_marginLeft="15dp"
