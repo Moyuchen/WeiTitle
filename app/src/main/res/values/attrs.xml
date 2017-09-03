@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HorizontalScrollView">
+        <attr name="swipe" format="boolean"></attr>
+        <attr name="top_background" format="color"></attr>
+        <attr name="text_color_normal" format="color"></attr>
+        <attr name="text_color_select" format="color"></attr>
+        <attr name="bottom_line" format="reference"></attr>
+    </declare-styleable>
+</resources>

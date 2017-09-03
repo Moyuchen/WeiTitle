@@ -71,6 +71,7 @@ public class listAdapter extends BaseAdapter {
                     holder.imageView=view.findViewById(R.id.iv);
                     holder.tv_data=view.findViewById(R.id.tv_data);
                     holder.tv_title=view.findViewById(R.id.tv_title);
+                    holder.category=view.findViewById(R.id.tv_category);
                     view.setTag(holder);
                     break;
                 case TYPE_B:
@@ -79,6 +80,7 @@ public class listAdapter extends BaseAdapter {
                     holder.imageView=view.findViewById(R.id.iv_h);
                     holder.tv_data=view.findViewById(R.id.tv_data_h);
                     holder.tv_title=view.findViewById(R.id.tv_title_h);
+                    holder.category=view.findViewById(R.id.tv_category_h);
                     view.setTag(holder);
                     break;
             }
@@ -100,5 +102,6 @@ public class listAdapter extends BaseAdapter {
         public TextView tv_title;
         public TextView tv_data;
         public ImageView imageView;
+        public  TextView category;
     }
 }
