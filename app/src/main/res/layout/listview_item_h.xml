@@ -27,7 +27,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="你好"
-                android:textColor="#333333"
+                android:textColor="@color/listview_item_tv_title_color"
                 android:textSize="15dp" />
         </LinearLayout>
 
@@ -43,7 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:text="你好"
-                android:textColor="#999999"
+                android:textColor="@color/listview_item_tv_color"
                 android:textSize="10dp" />
 
             <TextView
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:text="你好"
-                android:textColor="#999999"
+                android:textColor="@color/listview_item_tv_color"
                 android:layout_marginRight="10dp"
                 android:textSize="10dp" />
         </RelativeLayout>

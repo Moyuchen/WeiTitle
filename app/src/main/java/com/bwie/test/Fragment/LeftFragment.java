@@ -49,10 +49,10 @@ public class LeftFragment extends Fragment implements View.OnClickListener {
      * 获取控件,及给控件设置监听
      */
     private void initView() {
-        Phone_login = view.findViewById(R.id.Phone_login);
-        WeiXin_login = view.findViewById(R.id.WeiXin_login);
-        QQ_login = view.findViewById(R.id.QQ_login);
-        Sina_login = view.findViewById(R.id.Sina_login);
+        Phone_login = view.findViewById(R.id.frag_left_iv_Phone_Login);
+        WeiXin_login = view.findViewById(R.id.frag_left_iv_WeiXin_login);
+        QQ_login = view.findViewById(R.id.frag_left_iv_QQ_login);
+        Sina_login = view.findViewById(R.id.frag_left_iv_Sina_login);
 
         Phone_login.setOnClickListener(this);
         WeiXin_login.setOnClickListener(this);
@@ -65,17 +65,17 @@ public class LeftFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.Phone_login:
+            case R.id.frag_left_iv_Phone_Login:
                 //跳转到登录页面
                 Phonelogin();
                 break;
-            case R.id.WeiXin_login:
+            case R.id.frag_left_iv_WeiXin_login:
                 WeiXinlogin();
                 break;
-            case R.id.QQ_login:
+            case R.id.frag_left_iv_QQ_login:
                 qqlogin();
                 break;
-            case R.id.Sina_login:
+            case R.id.frag_left_iv_Sina_login:
                 Sinalogin();
                 break;
         }

@@ -4,6 +4,6 @@
     android:layout_height="wrap_content"
     android:padding="15dp"
     android:text="头条"
-    android:background="#20999999"
+    android:background="@color/menu_top_item_back_color"
     android:textColor="@drawable/tab_color"
     android:textSize="18sp"/>

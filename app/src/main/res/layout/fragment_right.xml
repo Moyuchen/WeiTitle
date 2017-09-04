@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4F5F6"
+    android:background="@color/frag_right_back_color"
     >
     <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:gravity="center_vertical"
-    android:background="@color/white"
+    android:background="@color/frag_right_Relative_top_back_color"
     >
     <ImageView
         android:layout_width="25dp"
@@ -20,35 +20,34 @@
         android:layout_width="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:textSize="15dp"
+        android:textSize="20dp"
         android:text="设置"/>
 </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
+        android:background="@color/frag_right_Linear_back_color"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@color/white"
+            android:layout_height="40dp"
+            android:background="@color/frag_right_Relative_back_color"
             android:gravity="center_vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="清除缓存"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="240dp"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="7.67MB"
                 android:layout_alignParentRight="true"
                 android:gravity="center"/>
@@ -57,17 +56,17 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#F4F5F6"></View>
+            android:background="@color/view"></View>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@color/white"
+            android:layout_height="40dp"
+            android:background="@color/frag_right_Relative_back_color"
             android:gravity="center_vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="字体大小"
                 />
             <TextView
@@ -82,17 +81,17 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#F4F5F6"></View>
+            android:background="@color/view"></View>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@color/white"
+            android:layout_height="40dp"
+            android:background="@color/frag_right_Relative_back_color"
             android:gravity="center_vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="列表显示摘要"
                 />
             <TextView
@@ -106,24 +105,24 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#F4F5F6"></View>
+            android:background="@color/view"></View>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@color/white"
+            android:layout_height="40dp"
+            android:background="@color/frag_right_Relative_back_color"
             android:gravity="center_vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="非WiFi网络流量"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="极省流量(不下载图)"
                 android:layout_alignParentRight="true"
                 android:gravity="center"/>
@@ -131,17 +130,17 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#F4F5F6"></View>
+            android:background="@color/view"></View>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@color/white"
+            android:layout_height="40dp"
+            android:background="@color/frag_right_Relative_back_color"
             android:gravity="center_vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="非WiFi网络播放提醒"
                 />
             <TextView
@@ -149,24 +148,24 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="提醒一次"
                 android:gravity="center"/>
         </RelativeLayout>
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#F4F5F6"></View>
+            android:background="@color/view"></View>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@color/white"
+            android:layout_height="40dp"
+            android:background="@color/frag_right_Relative_back_color"
             android:gravity="center_vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="推送通知"
                 />
             <TextView
@@ -184,18 +183,18 @@
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
-        android:background="@color/white"
+        android:background="@color/frag_right_Linear_back_color"
         android:layout_marginTop="10dp"
         android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             >
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="离线下载"
                 />
             <TextView
@@ -210,17 +209,17 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#F4F5F6"></View>
+            android:background="@color/view"></View>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             >
             <TextView
                 android:id="@+id/check"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="检查版本"
                 />
             <ImageView
@@ -235,7 +234,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:textSize="12dp"
+                android:textSize="15dp"
                 android:text="6.3.2"
                 android:gravity="center"/>
 
@@ -252,21 +251,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="#4F8CB7"
+            android:textColor="@color/frag_right_xieyi_color"
             android:layout_marginTop="15dp"
-            android:textSize="10dp"
+            android:textSize="15dp"
             android:text="今日头条用户协议"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:textSize="8dp"
+            android:layout_marginTop="45dp"
+            android:textSize="10dp"
             android:text="© 头条网 toutiao.com"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:textSize="8dp"
+            android:textSize="10dp"
             android:text="v6.3.2 Build 385a104_20170817"/>
     </LinearLayout>
 

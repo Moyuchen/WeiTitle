@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.bwie.test.MainActivity">
 <LinearLayout
     android:layout_width="match_parent"
@@ -17,6 +18,112 @@
     <com.bwie.test.HorizontalScrollView.HorizontalScrollTabhost
         android:id="@+id/hsm_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"></com.bwie.test.HorizontalScrollView.HorizontalScrollTabhost>
+        android:layout_height="470dp"></com.bwie.test.HorizontalScrollView.HorizontalScrollTabhost>
 </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="15dp"
+                android:layout_height="10dp"
+                android:layout_marginLeft="50dp"
+                android:textSize="8dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="15"
+                android:background="@drawable/shouye_tv_background"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentTop="true"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/shouye"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="12dp"
+                    android:layout_marginTop="3dp"
+                    android:text="首页"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/shipin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:layout_marginTop="3dp"
+                android:text="视频"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/weitoutiao"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:layout_marginTop="3dp"
+                android:text="微头条"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/weilogin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textSize="12dp"
+                android:layout_marginTop="3dp"
+                android:text="未登录"/>
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
