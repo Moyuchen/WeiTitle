@@ -83,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:paddingTop="10dp"
-            android:background="@color/white"
+            android:background="@color/frag_left_loginlayout_color"
             android:orientation="horizontal">
                 <LinearLayout
                     android:layout_width="30dp"
@@ -99,8 +99,10 @@
                             android:layout_centerHorizontal="true"
                             android:src="@drawable/shouc"/>
                         <TextView
+                            android:id="@+id/tv_weitoutiao"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:textColor="@color/frag_left_tv_color"
                             android:layout_centerHorizontal="true"
                             android:textSize="10dp"
                             android:layout_marginTop="3dp"
@@ -120,19 +122,24 @@
                             android:layout_centerHorizontal="true"
                             android:src="@drawable/history"/>
                         <TextView
+                            android:id="@+id/tv_history"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:textSize="10dp"
+                            android:textColor="@color/frag_left_tv_color"
                             android:layout_marginTop="3dp"
                             android:text="历史"/>
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/yejian"
+                    android:clickable="true"
                     android:layout_width="30dp"
                     android:layout_height="45dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="25dp"
                     android:gravity="center_horizontal"
+
                     android:orientation="vertical"
                     >
                         <ImageView
@@ -141,10 +148,12 @@
                             android:layout_centerHorizontal="true"
                             android:src="@drawable/yejian"/>
                         <TextView
+                            android:id="@+id/tv_yejian"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:textSize="10dp"
+                            android:textColor="@color/frag_left_tv_color"
                             android:layout_marginTop="3dp"
                             android:text="夜间"/>
                 </LinearLayout>
@@ -152,7 +161,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@color/frag_left_loginlayout_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:layout_marginTop="10dp"
@@ -161,13 +170,15 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:background="@color/white"
+            android:background="@color/frag_left_loginlayout_color"
             android:gravity="center_vertical">
                 <TextView
+                    android:id="@+id/Myguanzhu"
                     android:layout_width="wrap_content"
                     android:layout_centerVertical="true"
                     android:layout_height="wrap_content"
                     android:textSize="15dp"
+                    android:textColor="@color/frag_left_tv_color"
                     android:text="我的关注"
                     />
                 <ImageView
@@ -176,7 +187,7 @@
                     android:layout_height="25dp"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="75dp"
-                    android:layout_centerVertical="true"
+
                     android:layout_toLeftOf="@+id/myzhibo"
                     android:layout_toStartOf="@+id/myzhibo"
                     android:src="@drawable/zhibo32"/>
@@ -188,6 +199,7 @@
                     android:layout_alignParentRight="true"
                     android:drawableRight="@drawable/login_more_jiantou"
                     android:textSize="12dp"
+                    android:textColor="@color/frag_left_tv_color"
                     android:text="我的直播"/>
         </RelativeLayout>
 
@@ -198,12 +210,15 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:background="@color/white"
+            android:background="@color/frag_left_loginlayout_color"
+
             android:gravity="center_vertical">
                 <TextView
+                    android:id="@+id/tv_Messagetongzhi"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="15dp"
+                    android:textColor="@color/frag_left_tv_color"
                     android:text="消息通知"
                     />
                <TextView
@@ -217,7 +232,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white"
+            android:background="@color/frag_left_loginlayout_color"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:layout_marginTop="10dp"
@@ -225,21 +240,26 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
-                    android:background="@color/white"
+                    android:background="@color/frag_left_loginlayout_color"
+
                     android:gravity="center_vertical">
                         <TextView
+                            android:id="@+id/tv_toutianshangcheng"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:textSize="15dp"
+                            android:textColor="@color/frag_left_tv_color"
                             android:text="头条商城"
                             />
                         <TextView
+                            android:id="@+id/tv_yaoqing"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
                             android:textSize="12dp"
+                            android:textColor="@color/frag_left_tv_color"
                             android:drawableRight="@drawable/login_more_jiantou"
                             android:text="邀请好友的200元现金奖励"
                             android:gravity="center"/>
@@ -252,20 +272,25 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
-                    android:background="@color/white"
+                    android:background="@color/frag_left_loginlayout_color"
+
                     android:gravity="center_vertical">
                         <TextView
+                            android:id="@+id/tv_jingdongtegong"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
                             android:textSize="15dp"
+                            android:textColor="@color/frag_left_tv_color"
                             android:text="京东特供"
                             />
                         <TextView
+                            android:id="@+id/tv_xinren"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:textSize="12dp"
+                            android:textColor="@color/frag_left_tv_color"
                             android:layout_centerVertical="true"
                             android:drawableRight="@drawable/login_more_jiantou"
                             android:text="新人领188元红包"
@@ -277,7 +302,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:background="@color/white"
+            android:background="@color/frag_left_loginlayout_color"
             android:orientation="vertical"
             android:paddingLeft="20dp"
             android:paddingRight="20dp">
@@ -285,13 +310,16 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
-                    android:background="@color/white"
+                    android:background="@color/frag_left_loginlayout_color"
+
                     android:gravity="center_vertical">
 
                         <TextView
+                            android:id="@+id/Mybaoliao"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15dp"
+                            android:textColor="@color/frag_left_tv_color"
                             android:text="我要爆料" />
 
                         <TextView
@@ -311,14 +339,16 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
-                    android:background="@color/white"
+                    android:background="@color/frag_left_loginlayout_color"
+
                     android:gravity="center_vertical">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
+                            android:id="@+id/userfankui"
                             android:textSize="15dp"
+                            android:textColor="@color/frag_left_tv_color"
                             android:text="用户反馈" />
 
                         <TextView
@@ -337,13 +367,16 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="35dp"
-                    android:background="@color/white"
+                    android:background="@color/frag_left_loginlayout_color"
+
                     android:gravity="center_vertical">
 
                         <TextView
+                            android:id="@+id/xitongshezhi"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15dp"
+                            android:textColor="@color/frag_left_tv_color"
                             android:text="系统设置" />
 
                         <TextView

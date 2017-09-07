@@ -1,13 +1,18 @@
 package com.bwie.test.Fragment;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatDelegate;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.bwie.test.LoginActivity;
@@ -29,6 +34,8 @@ public class LeftFragment extends Fragment implements View.OnClickListener {
     private ImageView WeiXin_login;
     private ImageView Sina_login;
     private ImageView QQ_login;
+    private LinearLayout yejian;
+    private SharedPreferences sp;
 
 
     @Nullable
@@ -37,9 +44,11 @@ public class LeftFragment extends Fragment implements View.OnClickListener {
 
         if (view==null){
             view=inflater.inflate(R.layout.fragment_left,container,false);
+            //获取布局中的控件
+            initView();
         }
-        //获取布局中的控件
-        initView();
+
+
         return view;
     }
 
@@ -54,6 +63,11 @@ public class LeftFragment extends Fragment implements View.OnClickListener {
         QQ_login = view.findViewById(R.id.frag_left_iv_QQ_login);
         Sina_login = view.findViewById(R.id.frag_left_iv_Sina_login);
 
+        yejian = view.findViewById(R.id.yejian);
+
+        sp = getActivity().getSharedPreferences("My", Context.MODE_PRIVATE);
+
+        yejian.setOnClickListener(this);
         Phone_login.setOnClickListener(this);
         WeiXin_login.setOnClickListener(this);
         QQ_login.setOnClickListener(this);
@@ -77,6 +91,23 @@ public class LeftFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.frag_left_iv_Sina_login:
                 Sinalogin();
+                break;
+            case R.id.yejian:
+                boolean yejianclickable = sp.getBoolean("yejianclickable", true);
+                SharedPreferences.Editor edit = sp.edit();
+                if (yejianclickable){
+                    ((AppCompatActivity)getActivity()).getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    ((AppCompatActivity)getActivity()).recreate();
+                    edit.putBoolean("yejianclickable",false);
+                    edit.commit();
+                }else {
+                    //取消夜间模式，转为日间模式
+                    ((AppCompatActivity)getActivity()).getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    ((AppCompatActivity)getActivity()).recreate();
+                    edit.putBoolean("yejianclickable",true);
+                    edit.commit();
+                }
+
                 break;
         }
 

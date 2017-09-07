@@ -16,6 +16,7 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bwie.test.Fragment.XListViewFragment;
 import com.bwie.test.R;
 
 import java.util.ArrayList;
@@ -88,12 +89,12 @@ private Context mContext;
         mMenulayout = view.findViewById(R.id.layout_menu);
     }
 public void diaplay(List<String> listbean, List<Fragment> listfragment){
-    this.mListBean=listbean;
+    mMenulayout.removeAllViews();
+    this.mListBean = listbean;
     this.mListFragment=listfragment;
     this.count=listbean.size();
     topviews=new ArrayList<>(count);
     drawUi();
-
 
 }
 
@@ -127,6 +128,7 @@ public void diaplay(List<String> listbean, List<Fragment> listfragment){
             final TextView tv = (TextView) View.inflate(mContext, R.layout.menu_top_item, null);
             tv.setText(s);
             final int finali=i;
+
             tv.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -203,8 +205,17 @@ public void diaplay(List<String> listbean, List<Fragment> listfragment){
 
         @Override
         public Fragment getItem(int position) {
+            String s = mListBean.get(position);
+            for (int i = 0; i <mListBean.size(); i++) {
+                XListViewFragment fragment = (XListViewFragment) mListFragment.get(i);
+                String type = fragment.getType();
+                if (type.equals(s)) {
+                    return fragment;
+                }
 
-            return mListFragment.get(position);
+            }
+
+           return null;
         }
 
         @Override

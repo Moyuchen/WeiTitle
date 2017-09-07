@@ -1,5 +1,6 @@
 package com.bwie.test.Fragment;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,6 +12,7 @@ import com.bwie.test.API.API;
 import com.bwie.test.Adapter.listAdapter;
 import com.bwie.test.Bean.News;
 import com.bwie.test.R;
+import com.bwie.test.Utils.OthersUtils;
 import com.google.gson.Gson;
 
 import org.xutils.common.Callback;
@@ -30,6 +32,20 @@ public class XListViewFragment extends Fragment {
 
     private View view;
     private XListView xlistview;
+    private String type;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    @SuppressLint("ValidFragment")
+    public XListViewFragment(String type) {
+        this.type = type;
+    }
 
     @Nullable
     @Override
@@ -58,7 +74,10 @@ public class XListViewFragment extends Fragment {
      * 请求数据
      */
     private void RequestData() {
-        RequestParams params=new RequestParams(API.NEWS_UTL);
+        String s = OthersUtils.ReturnType(type);
+        String url=API.NEWS_UTL_BEFORE+s+API.NEWS_UTL_AFTER;
+
+        RequestParams params=new RequestParams(url);
         params.addBodyParameter("username:","adb");
         params.addParameter("password","123");
         x.http().post(params, new Callback.CommonCallback<String>() {
